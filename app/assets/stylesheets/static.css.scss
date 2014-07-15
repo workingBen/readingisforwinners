@@ -2,13 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$sunflower: #f1c40f;
+$wetasphault: #34495e;
+$asbestos: #7f8c8d;
+$clouds: #ecf0f1;
+$midnightblue: #2c3e50;
+
+$panel-heading-bg: #f39c12;
+
 h1 {
   text-align: center;
+  color: $wetasphault;
 }
 
 h2 {
   font-size: 2.3rem;
-  color: #777;
+  color: $asbestos;
   margin-top: -15px;
   text-align: center;
 }
@@ -19,8 +28,21 @@ h2 {
 
 html, body {
   margin: 0 auto;
+  background: $sunflower;
 }
 
 .spacer {
   height: 20px;
+}
+
+.panel {
+  background-color: $clouds;
+  border-color: $midnightblue;
+  .list-group-item {
+    background-color: $clouds;
+  }
+  .panel-heading {
+    background-color: $panel-heading-bg;
+    border-color: $midnightblue;
+  }
 }
