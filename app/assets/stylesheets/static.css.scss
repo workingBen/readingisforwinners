@@ -7,8 +7,8 @@ $wetasphault: #34495e;
 $asbestos: #7f8c8d;
 $clouds: #ecf0f1;
 $midnightblue: #2c3e50;
-
-$panel-heading-bg: #f39c12;
+$orange: #f39c12;
+$pomegranate: #c0392b;
 
 h1 {
   text-align: center;
@@ -22,13 +22,10 @@ h2 {
   text-align: center;
 }
 
-.list-group {
-  margin: 10px auto;
-}
-
 html, body {
   margin: 0 auto;
   background: $sunflower;
+  color: $midnightblue;
 }
 
 .spacer {
@@ -42,7 +39,18 @@ html, body {
     background-color: $clouds;
   }
   .panel-heading {
-    background-color: $panel-heading-bg;
+    background-color: $orange;
     border-color: $midnightblue;
+  }
+  .date {
+    font-weight: bold;
+  }
+  .hours {
+    float: right;
+  }
+  .badge {
+    background-color: $orange;
+    border: 1px solid $pomegranate;
+    color: $midnightblue;
   }
 }
