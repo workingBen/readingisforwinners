@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'haml', '~> 4.0.5'
+gem 'haml-rails', '~> 0.5.3'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
