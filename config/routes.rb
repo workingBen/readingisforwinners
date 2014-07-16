@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'static/timeline'
+  get 'timeline' => 'static#timeline'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

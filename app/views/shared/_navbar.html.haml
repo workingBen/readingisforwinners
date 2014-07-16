@@ -11,12 +11,12 @@
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li.active
+        %li
           %a{href: "#"} Book Reviews
         %li
           %a{href: "#"} Reading List
       %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{href: "/timeline"} Dev Timeline
+        %li{ class: (params[:controller] == 'static' && params[:action] == 'timeline' ? 'active' : '') }
+          %a{ href: "/timeline" } Dev Timeline
     / /.navbar-collapse
   / /.container-fluid

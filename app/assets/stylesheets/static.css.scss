@@ -66,3 +66,7 @@ html, body {
     color: $panel-header-border;
   }
 }
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: $pomegranate;
+}
