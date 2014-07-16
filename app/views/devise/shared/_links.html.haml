@@ -1,7 +1,7 @@
 - if controller_name != 'sessions'
   .field
     %h2.pad-header
-      Already have an account?
+      Have an account?
       = link_to "Sign in", new_session_path(resource_name), class: "action-link"
     %br/
 - if devise_mapping.registerable? && controller_name != 'registrations'
