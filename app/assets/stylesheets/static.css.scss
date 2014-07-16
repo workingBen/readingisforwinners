@@ -25,12 +25,24 @@ html, body {
 .panel {
   background-color: $panel-bg;
   border-color: $panel-header-border;
+  font-size: 2.0rem;
   .list-group-item {
     background-color: $panel-bg;
   }
-  .panel-heading {
+  .panel-heading, .panel-footer {
     background-color: $panel-header-bg;
     border-color: $panel-header-border;
+    max-height: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .panel-heading {
+    height: 78px;
+  }
+  .panel-footer {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
   }
   .date {
     font-weight: bold;

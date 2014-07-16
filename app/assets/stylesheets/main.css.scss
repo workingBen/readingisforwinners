@@ -38,3 +38,51 @@ input[type=submit], a.cta-secondary-button {
     text-decoration: none;
   }
 }
+
+.book-panel {
+  .value {
+    border-radius: 20px;
+    background-color: white;
+    color: green;
+    font-size: 3.0rem;
+    padding: 6px 10px;
+    position: absolute;
+    right: 27px;
+    top: 13px;
+  }
+  .title {
+    margin-right: 70px;
+    max-height: 60px;
+    overflow: hidden;
+  }
+  .picture {
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 200px;
+  }
+  .category {
+    font-size: 3.0rem;
+  }
+}
+
+.book-panel.marketing {
+  background-color: $panel-marketing-bg;
+  border-color: $panel-marketing-header-border;
+  color: white;
+  .list-group-item {
+    background-color: $panel-marketing-bg;
+  }
+  .panel-heading, .panel-footer {
+    background-color: $panel-marketing-header-bg;
+    border-color: $panel-marketing-header-border;
+  }
+  .badge {
+    background-color: $panel-marketing-header-bg;
+    border: 1px solid $panel-marketing-highlight;
+    color: $panel-marketing-header-border;
+  }
+}
+
+.pad-bottom {
+  padding-bottom: 30px;
+}

@@ -1,5 +1,14 @@
 %h1 Reading List
-%h2
+%h2.pad-bottom
   Reading your way to
   %em excellence
 
+- @books.each do |book|
+  .col-sm-6
+    .panel.book-panel{ class: "#{book.category.downcase}"}
+      .panel-heading
+        .title= book.title
+        .value= "$#{book.value}"
+      .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
+      .panel-footer
+        .category= book.category
