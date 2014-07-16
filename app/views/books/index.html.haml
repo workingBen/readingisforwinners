@@ -1,3 +1,17 @@
+:javascript
+  $( document ).ready(function() {
+    $(".more-btn").on('click', function(){
+      $(this).hide();
+      $(this).siblings(".less-btn").show();
+      $(this).siblings(".description").removeClass("more").addClass("less");
+    });
+    $(".less-btn").on('click', function(){
+      $(this).hide();
+      $(this).siblings(".more-btn").show();
+      $(this).siblings(".less").removeClass("less").addClass("more");
+    });
+  });
+
 %h1 Reading List
 %h2.pad-bottom
   Reading your way to
@@ -10,8 +24,11 @@
         .title= book.title
         .value= "$#{book.value}"
       .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
-      .description
-        %em Description:
-        = book.description
+      .description-container
+        .description.more
+          %em Description:
+          = book.description
+        .more-btn MORE
+        .less-btn LESS
       .panel-footer
         .category= book.category
