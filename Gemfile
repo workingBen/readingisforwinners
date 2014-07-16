@@ -14,6 +14,7 @@ gem 'spring',        group: :development
 
 gem 'haml', '~> 4.0.5'
 gem 'haml-rails', '~> 0.5.3'
+gem 'devise', '~> 3.2.4'
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
