@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  # placeholders
 
+  get 'book-reviews' => 'static#book_reviews_placeholder'
+  get 'reading-list' => 'static#reading_list_placeholder'
+  get 'rewards' => 'static#rewards_placeholder'
+  # end placeholders
+
+  devise_for :users
 
   get 'timeline' => 'static#timeline'
   get 'welcome' => 'static#welcome'

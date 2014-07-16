@@ -57,6 +57,14 @@ html, body {
 
 .welcome {
   margin-top: 10px;
+  a:hover {
+    text-decoration: none;
+    h2, h3 {
+      &:hover {
+        color: white;
+      }
+    }
+  }
   h2 {
     color: $header1;
     font-size: 8.0rem;

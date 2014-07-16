@@ -1,9 +1,12 @@
 .container.welcome
-  %h2 Read.
-  %h3 A good book.
-  %h2 Share.
-  %h3 Highlights and take-aways.
-  %h2 Win.
-  %h3 Rewards for your effort.
+  = link_to '/reading-list' do
+    %h2 Read.
+    %h3 A good book.
+  = link_to '/book-reviews' do
+    %h2 Share.
+    %h3 Highlights and take-aways.
+  = link_to '/rewards' do
+    %h2 Win.
+    %h3 Rewards for your effort.
 
   %a.cta-button.signup{href: new_user_registration_path} Get Started!
