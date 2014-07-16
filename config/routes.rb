@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'timeline' => 'static#timeline'
   get 'welcome' => 'static#welcome'
 
