@@ -75,10 +75,17 @@ html, body {
   display: block;
   text-align: center;
   font-size: 6.0rem;
-  background: #c0392b;
+  background: $pomegranate;
   width: 400px;
   max-width: 80%;
   margin: 40px auto 0 auto;
   border-radius: 6px;
   color: white;
+  cursor: pointer;
+  border: 2px solid $pomegranate;
+  &:hover {
+    color: white;
+    border: 2px solid $midnightblue;
+    text-decoration: none;
+  }
 }
