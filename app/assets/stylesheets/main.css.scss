@@ -1,0 +1,40 @@
+@import 'variables';
+
+input, a.cta-secondary-button {
+  background-color: $clouds;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  font-size: 2.0rem;
+  height: 46px;
+  line-height: 2.4rem;
+  padding: 10px 16px;
+  max-width: 400px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+.field {
+  width: 100%;
+  text-align: center;
+}
+input[type=submit], a.cta-secondary-button {
+  background: $pomegranate;
+  border: 2px solid $pomegranate;
+  color: white;
+  cursor: pointer;
+  font-size: 3.0rem;
+  height: 60px;
+  &:hover {
+    border: 2px solid $midnightblue;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.action-link {
+  color: $pomegranate;
+  font-size: 2.4rem;
+  &:hover {
+    color: $midnightblue;
+    text-decoration: none;
+  }
+}
