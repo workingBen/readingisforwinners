@@ -10,5 +10,8 @@
         .title= book.title
         .value= "$#{book.value}"
       .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
+      .description
+        %em Description:
+        = book.description
       .panel-footer
         .category= book.category

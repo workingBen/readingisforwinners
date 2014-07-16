@@ -63,10 +63,13 @@ input[type=submit], a.cta-secondary-button {
   .category {
     font-size: 3.0rem;
   }
+  .description {
+    padding: 10px;
+  }
 }
 
 .book-panel.marketing {
-  background-color: $panel-marketing-bg;
+  background-color: white;
   border-color: $panel-marketing-header-border;
   color: $midnightblue;
   .list-group-item {
@@ -81,6 +84,9 @@ input[type=submit], a.cta-secondary-button {
     background-color: $panel-marketing-header-bg;
     border: 1px solid $panel-marketing-highlight;
     color: $panel-marketing-header-border;
+  }
+  .description {
+    background-color: rgba(39,127,190,0.25);
   }
 }
 
