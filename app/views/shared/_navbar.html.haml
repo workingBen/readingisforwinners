@@ -18,5 +18,11 @@
           %a{href: "#"} Reading List
         %li{ class: (params[:controller] == 'static' && params[:action] == 'timeline' ? 'active' : '') }
           %a{ href: "/timeline" } Dev Timeline
+        - if user_signed_in?
+          %li
+            = link_to "Logout", destroy_user_session_path, :method => :delete
+        - else
+          %li
+            = link_to "Sign In", new_user_session_path
     / /.navbar-collapse
   / /.container-fluid

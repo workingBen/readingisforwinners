@@ -1,0 +1,10 @@
+:javascript
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".alert").slideUp();
+    }, 5000);
+  });
+
+- flash.each do |key, value|
+  %div{class: flash_class(key)}
+    = value
