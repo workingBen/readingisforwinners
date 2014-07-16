@@ -21,5 +21,9 @@
   .field
     = f.label :category
     = f.text_field :category
+  .field
+    = f.label :picture
+    = f.hidden_field(:picture_cache)
+    = f.file_field(:picture)
   .actions
     = f.submit 'Save'

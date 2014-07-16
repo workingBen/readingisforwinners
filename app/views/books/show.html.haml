@@ -16,6 +16,10 @@
   %b Category:
   = @book.category
 
+%p
+  %b Picture:
+  = image_tag @book.picture_url(:thumbnail)
+
 = link_to 'Edit', edit_book_path(@book)
 \|
 = link_to 'Back', books_path
