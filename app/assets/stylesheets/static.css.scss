@@ -10,22 +10,31 @@ $midnightblue: #2c3e50;
 $orange: #f39c12;
 $pomegranate: #c0392b;
 
+$page-bg: $sunflower;
+$page-copy: $midnightblue;
+$panel-header-bg: $orange;
+$panel-header-border: $midnightblue;
+$panel-bg: $clouds;
+$highlight: $pomegranate;
+$header1: $wetasphault;
+$header2: $asbestos;
+
 h1 {
   text-align: center;
-  color: $wetasphault;
+  color: $header1;
 }
 
 h2 {
   font-size: 2.3rem;
-  color: $asbestos;
+  color: $header2;
   margin-top: -15px;
   text-align: center;
 }
 
 html, body {
   margin: 0 auto;
-  background: $sunflower;
-  color: $midnightblue;
+  background: $page-bg;
+  color: $page-copy;
 }
 
 .spacer {
@@ -33,14 +42,14 @@ html, body {
 }
 
 .panel {
-  background-color: $clouds;
-  border-color: $midnightblue;
+  background-color: $panel-bg;
+  border-color: $panel-header-border;
   .list-group-item {
-    background-color: $clouds;
+    background-color: $panel-bg;
   }
   .panel-heading {
-    background-color: $orange;
-    border-color: $midnightblue;
+    background-color: $panel-header-bg;
+    border-color: $panel-header-border;
   }
   .date {
     font-weight: bold;
@@ -50,7 +59,7 @@ html, body {
   }
   .badge {
     background-color: $orange;
-    border: 1px solid $pomegranate;
-    color: $midnightblue;
+    border: 1px solid $highlight;
+    color: $panel-header-border;
   }
 }
