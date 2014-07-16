@@ -7,7 +7,7 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{href: "/timeline"} Read. Share. Win.
+      %a.navbar-brand{href: "/welcome", class: (params[:controller] == 'static' && params[:action] == 'welcome' ? 'active' : '')} Read. Share. Win.
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav

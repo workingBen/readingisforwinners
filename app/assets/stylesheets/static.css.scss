@@ -73,3 +73,22 @@ html, body {
     background-color: $pomegranate;
   }
 }
+.navbar-brand.active {
+  color: white;
+}
+
+.welcome {
+  margin-top: 80px;
+  h2 {
+    color: $header1;
+    font-size: 8.0rem;
+    line-height: 8.0rem;
+    padding: 40px 10px;
+  }
+  h3 {
+    font-size: 2.3rem;
+    margin-top: -50px;
+    text-align: center;
+    color: $midnightblue;
+  }
+}
