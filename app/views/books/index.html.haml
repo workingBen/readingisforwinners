@@ -23,6 +23,11 @@
       .panel-heading
         .title= book.title
         .value= "$#{book.value}"
+      .buttons
+        .col-xs-6.button.first
+          = book.buy_url.html_safe
+        .col-xs-6.button
+          = link_to 'Review', '/review'
       .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
       .description-container
         .description.more
