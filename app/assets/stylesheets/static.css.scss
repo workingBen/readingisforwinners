@@ -1,6 +1,3 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 // COLORS
 $sunflower: #f1c40f;
@@ -26,21 +23,21 @@ $header2: $asbestos;
 
 
 h1 {
-  text-align: center;
   color: $header1;
+  text-align: center;
 }
 
 h2 {
-  font-size: 2.3rem;
   color: $header2;
+  font-size: 2.3rem;
   margin-top: -15px;
   text-align: center;
 }
 
 html, body {
-  margin: 0 auto;
   background: $page-bg;
   color: $page-copy;
+  margin: 0 auto;
 }
 
 .spacer {
