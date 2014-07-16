@@ -69,4 +69,7 @@ html, body {
 
 .navbar-inverse .navbar-nav > .active > a {
   background-color: $pomegranate;
+  &:hover {
+    background-color: $pomegranate;
+  }
 }
