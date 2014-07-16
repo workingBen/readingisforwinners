@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: walmart-labs
+  api_key: '217382219213997'
+  api_secret: n4uGZdQGjtLXiSUIapm6xMx1WCI
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: walmart-labs
+  api_key: '217382219213997'
+  api_secret: n4uGZdQGjtLXiSUIapm6xMx1WCI
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: walmart-labs
+  api_key: '217382219213997'
+  api_secret: n4uGZdQGjtLXiSUIapm6xMx1WCI
+  enhance_image_tag: true
+  static_image_support: false
