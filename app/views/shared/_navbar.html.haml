@@ -13,9 +13,9 @@
       %ul.nav.navbar-nav
       %ul.nav.navbar-nav.navbar-right
         %li
-          %a{href: "#"} Book Reviews
+          %a{href: "/book-reviews"} Book Reviews
         %li
-          %a{href: "#"} Reading List
+          %a{href: "/reading-list"} Reading List
         %li{ class: (params[:controller] == 'static' && params[:action] == 'timeline' ? 'active' : '') }
           %a{ href: "/timeline" } Dev Timeline
         - if user_signed_in?

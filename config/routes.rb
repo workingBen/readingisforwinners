@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'book-reviews' => 'static#book_reviews_placeholder'
   get 'reading-list' => 'static#reading_list_placeholder'
-  get 'rewards' => 'static#rewards_placeholder'
+  get 'reward-leaderboard' => 'static#reward_leaderboard_placeholder'
   # end placeholders
 
   devise_for :users

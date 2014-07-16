@@ -11,7 +11,7 @@ class StaticController < ApplicationController
   def reading_list_placeholder
     return redirect_to root_path, notice: "The reading list is coming soon!"
   end
-  def rewards
-    return redirect_to root_path, notice: "Rewards are coming soon!"
+  def reward_leaderboard_placeholder
+    return redirect_to root_path, notice: "The reward leaderboard is coming soon!"
   end
 end
