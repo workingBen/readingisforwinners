@@ -28,8 +28,9 @@
     = f.select :rating, ["Rating: 1-5", "1", "2", "3", "4", "5"], {}, class: "disable-first"
   .field
     %br
-    = f.label "Would you recommend this book?"
-    = f.check_box :recommended
+    .field-container
+      = f.check_box :recommended
+      = f.label "Would you recommend this book?"
   .field
     %br
     = f.submit 'Share Review'

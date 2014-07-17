@@ -15,6 +15,13 @@ a.cta-secondary-button, input:not([type='checkbox']), textarea, select {
 textarea {
   height: 200px;
 }
+.field-container {
+  font-size: 2.0rem;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: left;
+  width: 95%;
+}
 .field {
   width: 100%;
   text-align: center;
