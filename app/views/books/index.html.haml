@@ -22,7 +22,10 @@
     .panel.book-panel{ class: "#{book.category.downcase.gsub(' ', '_')}"}
       .panel-heading
         .title= book.title
-        .value= "$#{book.value}"
+        .value
+          = "$#{book.value}"
+          %br
+          .reward REWARD
       .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
       .buttons
         .col-xs-6.button.first
