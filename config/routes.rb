@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
 
   resources :reviews
-
   resources :books
 
   # placeholders
 
-  get 'book-reviews' => 'static#book_reviews_placeholder'
   get 'reading-list' => 'books#index'
   get 'reward-leaderboard' => 'static#reward_leaderboard_placeholder'
   # end placeholders
