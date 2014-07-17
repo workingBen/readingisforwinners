@@ -1,7 +1,7 @@
 @import 'variables';
 
-a.cta-secondary-button, input:not([type='checkbox']) {
-  background-color: $clouds;
+a.cta-secondary-button, input:not([type='checkbox']), textarea, select {
+  background-color: white;
   border: 1px solid lightgrey;
   border-radius: 6px;
   font-size: 2.0rem;
@@ -11,6 +11,9 @@ a.cta-secondary-button, input:not([type='checkbox']) {
   max-width: 400px;
   width: 95%;
   -webkit-appearance: none;
+}
+textarea {
+  height: 200px;
 }
 .field {
   width: 100%;

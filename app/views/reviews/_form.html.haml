@@ -1,3 +1,8 @@
+:javascript
+  $(document).ready(function() {
+    $("select.disable-first option:first").attr("disabled", "disabled").val("");
+  });
+
 = form_for @review do |f|
   - if @review.errors.any?
     #error_explanation
@@ -20,7 +25,7 @@
     = f.text_area :summary, placeholder: "Review Copy / Book Highlights"
   .field
     %br
-    = f.select :rating, ["Rating", "1", "2", "3", "4", "5"]
+    = f.select :rating, ["Rating: 1-5", "1", "2", "3", "4", "5"], {}, class: "disable-first"
   .field
     %br
     = f.label "Would you recommend this book?"
