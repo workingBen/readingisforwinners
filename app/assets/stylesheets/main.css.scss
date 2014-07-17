@@ -167,6 +167,31 @@ input[type=submit], a.cta-secondary-button {
   }
 }
 
+.book-panel.management {
+  background-color: white;
+  border-color: $panel-management-header-border;
+  color: $midnightblue;
+  .list-group-item {
+    background-color: $panel-management-bg;
+  }
+  .panel-heading, .panel-footer {
+    background-color: $panel-management-header-bg;
+    border-color: $panel-management-header-border;
+    color: midnightblue;
+  }
+  .badge {
+    background-color: $panel-management-header-bg;
+    border: 1px solid $panel-management-highlight;
+    color: $panel-management-header-border;
+  }
+  .description-container {
+    background-color: rgba(155, 89, 182,0.25);
+  }
+  .col-xs-6.button {
+    background-color: rgba(155, 89, 182, 0.75);
+  }
+}
+
 .pad-bottom {
   padding-bottom: 30px;
 }
