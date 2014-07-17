@@ -34,7 +34,7 @@
           = link_to 'Review', new_review_path(book_id: book.id)
       .description-container
         .description.more
-          = book.description
+          = book.description.gsub("\n", "<br/>").html_safe
         .more-btn MORE
         .less-btn LESS
       .panel-footer
