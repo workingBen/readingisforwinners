@@ -205,6 +205,29 @@ input[type=submit], a.cta-secondary-button {
   }
 }
 
+.book-panel.review-panel {
+  .title {
+    margin-right: 160px;
+  }
+}
+
 .pad-bottom {
   padding-bottom: 30px;
+}
+
+.review-count {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.review-info {
+  font-size: 1.8rem;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.review-title {
+  font-size: 2.4rem;
+  padding: 4px 10px;
+  font-style: italic;
+  border-top: 1px solid $midnightblue;
 }

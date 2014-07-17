@@ -1,6 +1,42 @@
+:javascript
+  $( document ).ready(function() {
+    $(".more-btn").on('click', function(){
+      $(this).hide();
+      $(this).siblings(".less-btn").show();
+      $(this).siblings(".description").removeClass("more").addClass("less");
+    });
+    $(".less-btn").on('click', function(){
+      $(this).hide();
+      $(this).siblings(".more-btn").show();
+      $(this).siblings(".less").removeClass("less").addClass("more");
+    });
+  });
+
 %h1 Book Reviews
+%h2.pad-bottom
+  See what your
+  %em coworkers
+  are saying
 
-%div
-  For each book
-  %div iterate reviews for book as panel
-
+- @books.each do |book|
+  - if book.reviews.count > 0
+    .col-sm-6.col-lg-4
+      .panel.book-panel.review-panel{ class: "#{book.category.downcase.gsub(' ', '_')}"}
+        .panel-heading
+          .title= book.title
+          .value.reviews= pluralize(book.reviews.count, "Review")
+        .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
+        - book.reviews.each_with_index do |review, i|
+          .description-container
+            .review-count= "Review #{i+1}"
+            .review-info
+              %em= review.user.email
+              = "- #{review.rating} stars"
+            .review-title
+              = review.title
+            .description.more
+              = review.summary.gsub("\n", "<br/>").html_safe
+            .more-btn MORE
+            .less-btn LESS
+        .panel-footer
+          .category= book.category
