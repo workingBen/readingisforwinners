@@ -142,6 +142,31 @@ input[type=submit], a.cta-secondary-button {
   }
 }
 
+.book-panel.personal_development {
+  background-color: white;
+  border-color: $panel-pd-header-border;
+  color: $midnightblue;
+  .list-group-item {
+    background-color: $panel-pd-bg;
+  }
+  .panel-heading, .panel-footer {
+    background-color: $panel-pd-header-bg;
+    border-color: $panel-pd-header-border;
+    color: midnightblue;
+  }
+  .badge {
+    background-color: $panel-pd-header-bg;
+    border: 1px solid $panel-pd-highlight;
+    color: $panel-pd-header-border;
+  }
+  .description-container {
+    background-color: rgba(39, 174, 96,0.25);
+  }
+  .col-xs-6.button {
+    background-color: rgba(39, 174, 96, 0.75);
+  }
+}
+
 .pad-bottom {
   padding-bottom: 30px;
 }

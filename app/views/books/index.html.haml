@@ -19,7 +19,7 @@
 
 - @books.each do |book|
   .col-sm-6.col-lg-4
-    .panel.book-panel{ class: "#{book.category.downcase}"}
+    .panel.book-panel{ class: "#{book.category.downcase.gsub(' ', '_')}"}
       .panel-heading
         .title= book.title
         .value= "$#{book.value}"
