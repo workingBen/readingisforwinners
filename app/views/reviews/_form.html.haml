@@ -7,22 +7,24 @@
           %li= msg
 
   .field
-    = f.label :book_id
-    = f.text_field :book_id
+    %br
+    = f.hidden_field :book_id, value: @review.book_id
   .field
-    = f.label :user_id
-    = f.text_field :user_id
+    %br
+    = f.hidden_field :user_id, value: @review.user_id
   .field
-    = f.label :title
-    = f.text_field :title
+    %br
+    = f.text_field :title, placeholder: "Review Title"
   .field
-    = f.label :summary
-    = f.text_field :summary
+    %br
+    = f.text_area :summary, placeholder: "Review Copy / Book Highlights"
   .field
-    = f.label :rating
-    = f.text_field :rating
+    %br
+    = f.select :rating, ["Rating", "1", "2", "3", "4", "5"]
   .field
-    = f.label :recommended
+    %br
+    = f.label "Would you recommend this book?"
     = f.check_box :recommended
-  .actions
-    = f.submit 'Save'
+  .field
+    %br
+    = f.submit 'Share Review'

@@ -1,6 +1,6 @@
 @import 'variables';
 
-input, a.cta-secondary-button {
+a.cta-secondary-button, input:not([type='checkbox']) {
   background-color: $clouds;
   border: 1px solid lightgrey;
   border-radius: 6px;
