@@ -28,7 +28,7 @@
         .col-xs-6.button.first
           = book.buy_url.html_safe
         .col-xs-6.button
-          = link_to 'Review', '/review'
+          = link_to 'Review', new_review_path(book_id: book.id)
       .description-container
         .description.more
           = book.description
