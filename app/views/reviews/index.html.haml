@@ -24,11 +24,15 @@
       .panel.book-panel.review-panel{ class: "#{book.category.downcase.gsub(' ', '_')}"}
         .panel-heading
           .title= book.title
-          .value.reviews= pluralize(book.reviews.count, "Review")
+          .value.reviews
+            = pluralize(book.reviews.count, "Review")
+            .reward
+              = "#{recommendation_count(book)} RECOMMENDED"
         .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
         - book.reviews.each_with_index do |review, i|
           .description-container
-            .review-count= "Review #{i+1}"
+            .review-count
+              = "Review #{i+1}"
             .review-info
               %em= review.user.email
               = "- #{review.rating} stars"

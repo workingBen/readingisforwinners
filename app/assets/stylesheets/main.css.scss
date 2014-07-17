@@ -59,6 +59,9 @@ input[type=submit], a.cta-secondary-button {
     right: 27px;
     top: 10px;
     border: 2px solid white;
+    &.reviews {
+      padding: 0px 10px 14px 10px;
+    }
     .reward {
       font-size: 1.0rem;
       margin-top: -6px;
