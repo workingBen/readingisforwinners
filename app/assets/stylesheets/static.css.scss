@@ -59,6 +59,13 @@ html, body {
   }
 }
 
+.panel.timeline {
+  .panel-heading {
+    height: auto;
+  }
+  border-bottom: 6px solid $orange;
+}
+
 .navbar-inverse .navbar-nav > .active > a {
   background-color: $pomegranate;
   &:hover {
