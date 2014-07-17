@@ -18,20 +18,19 @@
   %em excellence
 
 - @books.each do |book|
-  .col-sm-6
+  .col-sm-6.col-lg-4
     .panel.book-panel{ class: "#{book.category.downcase}"}
       .panel-heading
         .title= book.title
         .value= "$#{book.value}"
+      .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
       .buttons
         .col-xs-6.button.first
           = book.buy_url.html_safe
         .col-xs-6.button
           = link_to 'Review', '/review'
-      .picture{style: "background-image: url('#{book.picture_url(:small)}');"}
       .description-container
         .description.more
-          %em Description:
           = book.description
         .more-btn MORE
         .less-btn LESS
