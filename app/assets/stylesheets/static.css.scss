@@ -24,14 +24,15 @@ html, body {
 
 .panel {
   background-color: $panel-bg;
-  border-color: $panel-header-border;
-  font-size: 2.0rem;
+  border-color: $panel-header-bg;
+  border-right: 6px solid $panel-header-bg;
+  border-left: 6px solid $panel-header-bg;
+  border-radius: 8px;
   .list-group-item {
     background-color: $panel-bg;
   }
   .panel-heading, .panel-footer {
     background-color: $panel-header-bg;
-    border-color: $panel-header-border;
     max-height: 78px;
     overflow: hidden;
     text-overflow: ellipsis;
