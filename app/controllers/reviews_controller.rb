@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
+  before_action :require_current_user, only: [:new, :edit, :update, :destroy, :create]
 
   # GET /reviews
   # GET /reviews.json
@@ -15,6 +16,8 @@ class ReviewsController < ApplicationController
   # GET /reviews/new
   def new
     @review = Review.new
+    @review.book_id = params[:book_id]
+    @review.user_id = current_user.id
   end
 
   # GET /reviews/1/edit
@@ -28,7 +31,7 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
+        format.html { redirect_to reviews_path, notice: 'Review was successfully created.' }
         format.json { render :show, status: :created, location: @review }
       else
         format.html { render :new }
@@ -70,5 +73,9 @@ class ReviewsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
       params.require(:review).permit(:book_id, :user_id, :title, :summary, :rating, :recommended)
+    end
+
+    def require_current_user
+      return redirect_to new_user_session_path, error: "You must be signed in to review a book." unless current_user
     end
 end
